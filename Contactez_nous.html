@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Afpa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/afpa_logo_vert.jpg" alt="logo_afpa" />
+      <nav>
+        <ul>
+          <li><a href="./Acceuil.html">Acceuil</a></li>
+          <li><a href="./formation.html">Formation</a></li>
+          <li><a href="./temoignages.html">Témoignages</a></li>
+          <li><a href="./Nos_Références.html">Nos références</a></li>
+          <li><a href="./Contactez_nous.html">Contactez Nous</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Mise en place du formulaire , dans une span , et incluant un tableau pour des facilités de style-->
+      <fieldset>
+        <form method="get" action="#" class="formulaire">
+          <table>
+            <tr>
+              <td><label for="nom">Nom(*)</label></td>
+              <td><input type="text" name="nom" id="nom" /></td>
+              <td><label for="region">Votre Region :</label></td>
+              <td><select name="region" id="region"></select></td>
+            </tr>
+            <tr>
+              <td><label for="Adresse_mail">Adresse mail (*)</label></td>
+              <td>
+                <input type="text" name="Adresse_mail" id="Adresse_mail" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="Numero_de_téléphone">Numéro de telephone (*)</label>
+              </td>
+              <td>
+                <input
+                  type="tel"
+                  name="Numero_de_téléphone"
+                  id="Numero_de_téléphone"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Situation :</td>
+              <td>
+                <label for="demandeur_emploi">Demandeur d'emploi</label>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="demandeur_emploi"
+                  id="demandeur_emploi"
+                />
+                <br />
+                <label for="salarie"> Salarié en transition</label>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="salarie"
+                  id="salarie"
+                />
+                <br />
+                <label for="autre"> Autre</label>
+                <input type="radio" name="situation" value="autre" id="autre" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Modalités d'apprentissage privilégiées:</td>
+              <td>
+                <label for="centre">En centre de formation (presentiel)</label>
+                <input
+                  type="radio"
+                  name="modeApprentissage"
+                  value="centre"
+                  id="centre"
+                />
+                <br />
+                <label for="distance">100% à distance</label>
+                <input
+                  type="radio"
+                  name="modeApprentissage"
+                  value="distance"
+                  id="distance"
+                />
+                <br />
+                <label for="alternance"
+                  >En contrat d'alternance avec l'entreprise</label
+                >
+                <input
+                  type="radio"
+                  name="modeApprentissage"
+                  value="alternance"
+                  id="alternance"
+                />
+                <br />
+                <label for="sans_preferences"> Sans préférences</label>
+                <input
+                  type="radio"
+                  name="modeApprentissage"
+                  value="sans_preferences"
+                  id="sans_preferences"
+                />
+              </td>
+            </tr>
+          </table>
+          <!-- Difficultés a styliser le bouton submit, prefere le laisser en etat pour des raisons d'accéssibilité-->
+          <input type="submit" value="envoyer" />
+          <p class="informationObligatoire">* Information obligatoire</p>
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>
